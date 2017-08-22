@@ -50,8 +50,8 @@
     this may arise out of program logic then report this incident.</br>
 12) create the following folders.
     ```
-   /opt/cloudfoundry/gitzip/redis</br>
-   /opt/cloudfoundry/gitzip/rabbitmq</br>
-   /opt/cloudfoundry/gitzip/postgres</br>
-   /opt/cloudfoundry/project</br>
+    /opt/cloudfoundry/gitzip/redis
+    /opt/cloudfoundry/gitzip/rabbitmq
+    /opt/cloudfoundry/gitzip/postgres
+    /opt/cloudfoundry/project
    ```
