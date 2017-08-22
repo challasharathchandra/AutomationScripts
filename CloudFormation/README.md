@@ -7,11 +7,14 @@
 3) Check if cloud foundry cli is installed or not.
     refer below link https://github.com/cloudfoundry/cli
 3) Run the following commands
+    ```
     gem install cf-uaac
     gem install colorize
     gem install json
+    ```
 4) If you are using windows then install curl
 5) open the file main.rb and make some changes as per your system configuration.</br>
+   ```
    In this file, go to main() method.</br>
     @home_directory= enter your home path in quotes</br>
     @curl_path=?</br>
@@ -25,7 +28,7 @@
 	if you are linux users then</br>
 	  @curl_command = "curl"</br>
     @dummy_directory = enter some dummy path which have read and write access in quotes.</br>
-
+   ```
 Note: Windows users  must use / rather than \ in between the directories.</br>
 
 6) when you run the script, it will prompt for entering the data from the user.</br>
@@ -43,9 +46,9 @@ Note: Windows users  must use / rather than \ in between the directories.</br>
 11) if you see execution failed with out giving the red color,</br>
      this may arise out of program logic then report this incident.</br>
 12) create the following folders..</br>
-
+    ```
    /opt/cloudfoundry/gitzip/redis</br>
    /opt/cloudfoundry/gitzip/rabbitmq</br>
    /opt/cloudfoundry/gitzip/postgres</br>
    /opt/cloudfoundry/project</br>
-  
+   ```
