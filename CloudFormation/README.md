@@ -11,7 +11,7 @@
     gem install colorize
     gem install json
 4) If you are using windows then install curl
-5) open the file main.rb and make some changes as per your system configuration.
+5) open the file main.rb and make some changes as per your system configuration.</br>
    In this file, go to main() method.
     @home_directory= enter your home path in quotes
     @curl_path=?
