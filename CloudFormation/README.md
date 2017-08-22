@@ -5,7 +5,7 @@
 1) First install Ruby
 2) Check if gem command is working or not in command prompt or terminal.
 3) Check if cloud foundry cli is installed or not.
-    refer below link https://github.com/cloudfoundry/cli
+     [Click here for help](https://github.com/cloudfoundry/cli)
 3) Run the following commands
     ```
     gem install cf-uaac
