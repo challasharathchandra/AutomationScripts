@@ -55,3 +55,8 @@
     /opt/cloudfoundry/gitzip/postgres
     /opt/cloudfoundry/project
    ```
+13) If you want to change any defaults, you can change them in main.rb file.
+14) After all modifications are done, you can run the main.rb file with the following command.
+    ```
+    ruby main.rb
+    ```
