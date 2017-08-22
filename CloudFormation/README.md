@@ -15,28 +15,29 @@
 4) If you are using windows then install curl
 5) open the file main.rb and make some changes as per your system configuration.</br>
    ```
-   In this file, go to main() method.</br>
-    @home_directory= enter your home path in quotes</br>
-    @curl_path=?</br>
-    	If curl environmental variable is not working</br>
-        then @curl_path = path to curl executable in your system in quotes</br>
-   	 If curl enviromental variable is working</br>
-        then @curl_path = some dummy path which have read and write access in quotes</br>
-    @curl_command = ?</br>
-        If you are windows users and curl enviromental is not working then</br>
-          @curl_command = "curl.exe"</br>
-	if you are linux users then</br>
-	  @curl_command = "curl"</br>
-    @dummy_directory = enter some dummy path which have read and write access in quotes.</br>
+   In this file, go to main() method.
+    @home_directory= enter your home path in quotes
+    @curl_path=?
+    	If curl environmental variable is not working
+        then @curl_path = path to curl executable in your system in quotes
+   	 If curl enviromental variable is working
+        then @curl_path = some dummy path which have read and write access in quotes
+    @curl_command = ?
+        If you are windows users and curl enviromental is not working then
+          @curl_command = "curl.exe"
+	if you are linux users then
+	  @curl_command = "curl"
+    @dummy_directory = enter some dummy path which have read and write access in quotes.
    ```
 Note: Windows users  must use / rather than \ in between the directories.</br>
 
 6) when you run the script, it will prompt for entering the data from the user.</br>
- project name : name of the folder in your system which contains source files of the application</br>
-   if those files are not present in your system then provide some dummy path here.</br>
- In next instance it will ask for the path to the above folder.</br>
- here provide any path you like, your source files from git will be downloaded to this path.</br>
-
+   ```
+   project name : name of the folder in your system which contains source files of the application
+      if those files are not present in your system then provide some dummy path here
+      In next instance it will ask for the path to the above folder
+      here provide any path you like, your source files from git will be downloaded to this path
+  ```
 7) service name is the name of the service you want to use for creation of service instance.
 
 8) if you see yellow color means the script is waiting for your input.
