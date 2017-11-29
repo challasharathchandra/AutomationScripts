@@ -116,19 +116,18 @@ def create_snapshots(connection):
 def get_latest_ami_id(connection): 
     global latest_ami_id 
     global image_filter
-	index=0
+    index=0
     images = connection.get_all_images(filters=image_filter) 
 	if len(images) == 1: 
 		index = 0 
     else: 
 		compare_date = images[0].creationDate 
         compare_date_obj = datetime.strptime(compare_date,"%Y-%m-%dT%H:%M:%S.%fZ") 
-        for i in range(1,len(images)): 
-			print images[i].id 
+        for i in range(1,len(images)):
             creation_date=images[i].creationDate 
             datetime_obj=datetime.strptime(creation_date,"%Y-%m-%dT%H:%M:%S.%fZ") 
             if datetime_obj >= compare_date_obj: 
-				compare_date_obj = datetime_obj 
+		compare_date_obj = datetime_obj 
                 index = i 
     latest_ami_id = images[index].id 
     latest_ami_created_date = images[index].creationDate
