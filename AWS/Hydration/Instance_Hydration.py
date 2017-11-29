@@ -143,9 +143,9 @@ def update_cf_template():
         global instance_list 
         global volume_list 
         global snapshot_dict
-		print instance_list
-		print volume_list
-		print snapshot_dict
+	print instance_list
+	print volume_list
+	print snapshot_dict
         snapshot_names = snapshot_dict.keys()
         with open(file_name,'r') as f: 
                 data = json.load(f) 
@@ -158,7 +158,6 @@ def update_cf_template():
                                                 if tag['Key']=='Name': 
                                                         volume_search = tag['Value'] 
                                                         break
-										print volume_search
                                         if snapshot_dict.has_key(volume_search): 
                                                 data['Resources'][volume]['Properties']['SnapshotId']=snapshot_dict[volume_search][0] 
                                         for i in range(len(tags)): 
