@@ -121,7 +121,7 @@ def get_latest_ami_id(connection):
 	if len(images) == 1: 
 		index = 0 
     else: 
-		compare_date = images[0].creationDate 
+	compare_date = images[0].creationDate 
         compare_date_obj = datetime.strptime(compare_date,"%Y-%m-%dT%H:%M:%S.%fZ") 
         for i in range(1,len(images)):
             creation_date=images[i].creationDate 
