@@ -17,7 +17,7 @@ parser.add_option('--instance_name',help='provide the name of the instance',type
 (options,args) = parser.parse_args()
 instance_name=options.instance_name
 
-connection_ec2=ec2.connect_to_region(region,aws_access_key_id=AWS_ACCESS_KEY_ID,aws_secret_access_key=AWS_SECRET_ACCESS_KEY)
+connection_ec2=ec2.connect_to_region(region)
 reservations=connection_ec2.get_all_instances()
 
 def create_image(connection_ec2,instance_id,name,description,block_device_mapping):
