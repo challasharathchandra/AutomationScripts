@@ -17,6 +17,10 @@ parser.add_option('--instance_name',help='provide the name of the instance',type
 (options,args) = parser.parse_args()
 instance_name=options.instance_name
 
+if (!instance_name):
+  print "Instance name is not provided"
+  sys.exit(1)
+
 connection_ec2=ec2.connect_to_region(region)
 reservations=connection_ec2.get_all_instances()
 
